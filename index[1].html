@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>The Stone Age Cafe — Nerul, Navi Mumbai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav>
+  <div class="logo"><span class="logo-m pf">The Stone Age</span><span class="logo-s">Cafe</span></div>
+  <div class="nl">
+    <button class="nb" onclick="go('gallery')">gallery</button>
+    <button class="nb" onclick="go('menu')">menu</button>
+    <button class="nb" onclick="go('booking')">book</button>
+    <button class="nb" onclick="go('reviews')">reviews</button>
+    <button class="nb" onclick="go('visit')">visit</button>
+    <button class="ba" onclick="go('booking')">Reserve Table</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hi">
+    <!-- Real cafe photo fetched from Google/MagicPin listing -->
+    <img src="https://lh3.googleusercontent.com/i3v8V8sCXxc25qn54ib9CjNhrUwZsZD1UOJvLl65b3O3HdtuXIpxC9c-6jTZY8nbqW7HWpUfCNzmr1vA9ASHInGQuKhI=w1200-rw"
+         alt="The Stone Age Cafe interior — Nerul Navi Mumbai"
+         onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85'">
+    <div class="hchip"><p>Open Daily</p><p class="pf">11 AM – 11 PM</p></div>
+    <div class="hrat"><span>★</span><span>4.5 · 490+ Reviews</span></div>
+  </div>
+  <div class="ht">
+    <p class="lbl fu d1">Nerul, Navi Mumbai</p>
+    <h1 class="pf hh1 fu d2">Elevated<br><em style="color:#d4a853;font-style:italic">Comfort.</em></h1>
+    <div class="ar fu d3"></div>
+    <p class="hp fu d3">A cave-inspired Continental cafe in the heart of Nerul. Board games, warm stone walls, amber light — and an extensive menu that earns quiet devotion. 100% Pure Vegetarian.</p>
+    <div class="hbtns fu d4">
+      <button class="ba" onclick="go('menu')">Explore Menu</button>
+      <button class="bw" onclick="go('booking')">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Table
+      </button>
+    </div>
+    <div class="stats fu d5">
+      <div><p class="sv pf">11 Categories</p><p class="sk">Menu</p></div>
+      <div><p class="sv pf">70+ Items</p><p class="sk">All Veg</p></div>
+      <div><p class="sv pf">₹120–₹498</p><p class="sk">Price Range</p></div>
+      <div><p class="sv pf">4.5 ★</p><p class="sk">490+ Reviews</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ti" id="ticker"></div></div>
+
+<!-- ═══ REAL PHOTO GALLERY ═══ -->
+<!-- All photos fetched from Google Maps / MagicPin verified listing -->
+<div class="gal-sec" id="gallery">
+  <p class="lbl" style="margin-bottom:12px">Inside the cave</p>
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <h2 class="pf" style="font-size:clamp(26px,4vw,46px);font-weight:700;color:#1a1a1a">Our Space</h2>
+    <p style="font-size:12px;font-weight:300;color:#9a8c7a">Photos from the actual cafe</p>
+  </div>
+  <hr style="border:none;border-top:1px solid #ede8e0;margin-top:14px">
+
+  <div class="gal-grid">
+    <!-- Row 1: tall + 3 short -->
+    <div class="gal-item tall">
+      <img src="https://lh3.googleusercontent.com/XqGhnLNN7zZRsxAdjtktMtgf2REMyLTGpigoWLlmUkbQP0vT_bp7DD0Y63I1BlJ4ELkIO0AdjlBD4iOzOsBCCAwF_eU=w800-rw"
+           alt="The Stone Age Cafe — cave-themed rustic interior Nerul"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Interior</span></div>
+    </div>
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/_SDzJKfJh6xZxEgf-d8UxQbLIlof_eKnSUuH0LcrximDoOctb1iPbWW6PehTd8uEh5yogG1mRy_Q5_UiT0VRYgfo03xcOWCpCBAY0dlKUw=w800-rw"
+           alt="Stone Age Cafe seating area and decor"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Seating</span></div>
+    </div>
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/cGOWiTNHtozDHbEkABhthIyxt0Dwx3MUhHt2lvchjsplP0_La1XIr-osHaeWtiVwiWT4mWddhbrJOMtX-u2cGdojhPUYuWI5SVz2KmVZ=w800-rw"
+           alt="Stone Age Cafe cave-themed decor and atmosphere"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Ambiance</span></div>
+    </div>
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/R0C-fdSIql-nDf7ghCeredUFl1WtZs5ED3IoVG-2SVjQvNJvBdOucX8MD4VPZyflrSV2OXBNy0yUUQsH1ZoM7BSqmP0jGwnITbsx1zk=w800-rw"
+           alt="Stone Age Cafe food and dining area"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Dining</span></div>
+    </div>
+    <!-- Row 2 -->
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/oAKnbD1AZrgRTwxA0YhUX_RQZyyo9Eg19hpLZNGr5crdPsEpHv9XKS34tmTht6itZ94Pj2WDMFVLnnEkOtgHPEI2q3HatODQpiFJepNI=w800-rw"
+           alt="Stone Age Cafe board games collection"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Board Games</span></div>
+    </div>
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/FiWF8afv2XlSZTQsh-llj__Qt1wQVj_1enbxzuV4cWMsMGJYAj7bZHN-0lXC9iiBJOTxTUb6HqWzorYeRkA9okmHWNHvJCvlvo6lL27w=w800-rw"
+           alt="Stone Age Cafe walls and cave-inspired interior design"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Cave Decor</span></div>
+    </div>
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/PnBdEFoF2FeBUjPpRmktwpRkKgmX0dkEiQGIdp8HN9VNiIWqFua7cfY7wJYOkofWCqYTQB-Osgm1jmSNrv3hfd59a1-msZpVqmywkD9a=w800-rw"
+           alt="Stone Age Cafe menu items on table"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">Food</span></div>
+    </div>
+    <!-- Cover photo wide -->
+    <div class="gal-item short">
+      <img src="https://lh3.googleusercontent.com/i3v8V8sCXxc25qn54ib9CjNhrUwZsZD1UOJvLl65b3O3HdtuXIpxC9c-6jTZY8nbqW7HWpUfCNzmr1vA9ASHInGQuKhI=w800-rw"
+           alt="The Stone Age Cafe Nerul — full view"
+           onload="this.classList.add('loaded')"
+           onerror="this.src='https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80';this.classList.add('loaded')">
+      <div class="gal-overlay"><span class="gal-cap">The Cafe</span></div>
+    </div>
+  </div>
+
+  <!-- Cafe note -->
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:20px 0;border-top:1px solid #ede8e0;margin-top:3px">
+    <p class="pf" style="font-size:17px;font-style:italic;color:#9a8c7a">Rustic stone walls. Amber light. Board games. ✦ Nerul's most beloved cafe.</p>
+    <a href="https://www.instagram.com/thestoneage.cafe" target="_blank" style="text-decoration:none">
+      <button style="display:flex;align-items:center;gap:7px;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:10px 20px;border:none;cursor:pointer">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Follow @thestoneage.cafe
+      </button>
+    </a>
+  </div>
+</div>
+
+<!-- ═══ FULL MENU — exact names from MagicPin/Zomato ═══ -->
+<div class="menu-sec" id="menu">
+  <p class="lbl" style="margin-bottom:12px">What we serve</p>
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <h2 class="pf" style="font-size:clamp(26px,4vw,46px);font-weight:700;color:#1a1a1a">The Full Menu</h2>
+      <p style="font-size:11px;font-weight:300;color:#9a8c7a;margin-top:5px">Exact names & prices as listed on Zomato / MagicPin · 100% Pure Vegetarian</p>
+    </div>
+  </div>
+  <hr style="border:none;border-top:1px solid #ede8e0;margin-top:14px">
+
+  <div class="menu-layout">
+    <div class="cat-nav" id="cat-nav"></div>
+    <div class="mcol" id="mcol"></div>
+  </div>
+</div>
+
+<!-- BREAK -->
+<div class="brk">
+  <img src="https://lh3.googleusercontent.com/_SDzJKfJh6xZxEgf-d8UxQbLIlof_eKnSUuH0LcrximDoOctb1iPbWW6PehTd8uEh5yogG1mRy_Q5_UiT0VRYgfo03xcOWCpCBAY0dlKUw=w1200-rw"
+       alt="The Stone Age Cafe Nerul interior"
+       onerror="this.src='https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=85'">
+  <div class="brko">
+    <p class="lbl" style="color:rgba(250,249,247,.45);margin-bottom:12px">The Stone Age Cafe · Nerul</p>
+    <h2 class="pf" style="font-size:clamp(22px,5vw,50px);color:#faf9f7;font-weight:700;line-height:1.1">Where every meal<br><em style="color:#d4a853">tells a story.</em></h2>
+  </div>
+</div>
+
+<!-- BOOKING -->
+<div class="bsec" id="booking">
+  <div class="binner">
+    <div class="btxt">
+      <p class="lbl" style="color:#5a5248;margin-bottom:12px">Reserve your spot</p>
+      <h2 class="pf">Book a Table</h2>
+      <div style="width:44px;height:1.5px;background:#d4a853;margin:12px 0 14px"></div>
+      <p>No fees. Reserve through your favourite app, or WhatsApp us — confirmed within minutes.</p>
+      <p class="lbl" style="color:#5a5248;margin-bottom:12px">Order & Book via App</p>
+      <div class="apps">
+        <a class="abtn" href="https://www.zomato.com/mumbai/the-stone-age-cafe-nerul-navi-mumbai/order" target="_blank">
+          <div class="aico" style="background:#E23744"><svg width="20" height="20" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#E23744"/><text x="20" y="27" text-anchor="middle" font-family="Arial" font-weight="800" font-size="20" fill="white">Z</text></svg></div>
+          <div><p class="an">Zomato</p><p class="as2">Order online · Dine-in · Table booking</p></div>
+          <span class="aa">↗</span>
+        </a>
+        <a class="abtn" href="https://www.swiggy.com/restaurants/the-stone-age-cafe-nerul-mumbai-262188" target="_blank">
+          <div class="aico" style="background:#FC8019"><svg width="20" height="20" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#FC8019"/><text x="20" y="27" text-anchor="middle" font-family="Arial" font-weight="800" font-size="20" fill="white">S</text></svg></div>
+          <div><p class="an">Swiggy</p><p class="as2">Home delivery & dine-in</p></div>
+          <span class="aa">↗</span>
+        </a>
+        <a class="abtn" href="https://www.eazydiner.com/mumbai/the-stone-age-cafe-nerul-navi-mumbai-683709" target="_blank">
+          <div class="aico" style="background:#FF5252"><svg width="20" height="20" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#FF5252"/><text x="20" y="27" text-anchor="middle" font-family="Arial" font-weight="700" font-size="14" fill="white">ED</text></svg></div>
+          <div><p class="an">EazyDiner</p><p class="as2">10% OFF · Table booking</p></div>
+          <span class="aa">↗</span>
+        </a>
+        <a class="abtn" href="https://maps.google.com/?q=The+Stone+Age+Cafe+Sector+3+Nerul+Navi+Mumbai" target="_blank">
+          <div class="aico" style="background:#4285F4"><svg width="20" height="20" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#4285F4"/><text x="20" y="27" text-anchor="middle" font-family="Arial" font-weight="800" font-size="18" fill="white">G</text></svg></div>
+          <div><p class="an">Google Maps</p><p class="as2">Directions & location</p></div>
+          <span class="aa">↗</span>
+        </a>
+      </div>
+      <div class="dl"><span>or call directly</span></div>
+      <a href="tel:+919999900000" style="text-decoration:none">
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.background='rgba(255,255,255,.04)'">
+          <div style="width:36px;height:36px;background:#d4a853;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div><p style="font-size:13px;font-weight:600;color:#faf9f7;margin-bottom:2px">+91 99999 00000</p><p style="font-size:10px;color:#5a5248">Tap to call · 11 AM – 11 PM daily</p></div>
+        </div>
+      </a>
+    </div>
+    <div class="bform">
+      <p class="ft pf">WhatsApp Reservation</p>
+      <p class="fs">Fill your details and we'll open a pre-filled WhatsApp message to confirm your table instantly.</p>
+      <div class="fr">
+        <div class="fg"><label>Name</label><input type="text" id="fn" placeholder="Your name"></div>
+        <div class="fg"><label>Phone</label><input type="tel" id="fp" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Date</label><input type="date" id="fd"></div>
+        <div class="fg"><label>Time</label>
+          <select id="ft2">
+            <option value="">Select time</option>
+            <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+            <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+            <option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Guests</label>
+          <select id="fg2"><option value="">How many?</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
+        </div>
+        <div class="fg"><label>Occasion</label>
+          <select id="fo"><option value="">Optional</option><option>Birthday</option><option>Anniversary</option><option>Date Night</option><option>Family Dinner</option><option>Friends Hangout</option><option>Other</option></select>
+        </div>
+      </div>
+      <div class="fg"><label>Special Requests</label><textarea id="fnote" placeholder="Dietary needs, seating preferences..."></textarea></div>
+      <button class="fsub" onclick="sendWA()">
+        <span style="display:flex;align-items:center;justify-content:center;gap:8px">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </span>
+      </button>
+      <p class="fnote">Confirmed within 30 minutes · Walk-ins also welcome</p>
+      <div class="smsg" id="smsg"><p>✓ Opening WhatsApp with your booking details...</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="rsec" id="reviews">
+  <div class="rinner">
+    <div class="rhdr">
+      <div>
+        <p class="lbl" style="margin-bottom:12px">What our guests say</p>
+        <h2 class="pf" style="font-size:clamp(26px,4vw,46px);font-weight:700;color:#1a1a1a">Guest Reviews</h2>
+      </div>
+      <div class="grbox">
+        <svg width="28" height="28" viewBox="0 0 48 48"><path fill="#4285F4" d="M43.6 20H24v8h11.3C33.5 33.6 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.7-.1-4z"/><path fill="#34A853" d="M6.3 14.7l6.6 4.8C14.5 16 19 13 24 13c3 0 5.8 1.1 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4c-7.7 0-14.3 4.3-17.7 10.7z"/><path fill="#FBBC05" d="M24 44c5.2 0 9.8-1.7 13.4-4.7l-6.2-5.1C29.2 35.6 26.7 36 24 36c-5.2 0-9.5-2.4-11.3-6.1L6 34.3C9.4 39.7 16.2 44 24 44z"/><path fill="#EA4335" d="M43.6 20H24v8h11.3c-.9 2.5-2.6 4.6-4.9 6l6.2 5.1C40.4 35.5 44 30.2 44 24c0-1.3-.1-2.7-.4-4z"/></svg>
+        <div>
+          <div class="gscore pf">4.5</div>
+          <div style="display:flex;gap:2px;margin:4px 0 3px"><span style="color:#fbbc04;font-size:16px">★★★★</span><span style="color:#fbbc04;font-size:16px;opacity:.5">★</span></div>
+          <div class="gcount">490+ reviews · Zomato & Google</div>
+        </div>
+      </div>
+    </div>
+    <div class="rgrid" id="rgrid"></div>
+    <div class="rcta">
+      <p>Visited The Stone Age Cafe? Share your experience and help others discover this gem!</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJstone_age_nerul" target="_blank" style="text-decoration:none">
+          <button style="display:flex;align-items:center;gap:7px;background:#4285F4;color:#fff;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:10px 18px;border:none;cursor:pointer">
+            <svg width="12" height="12" viewBox="0 0 48 48"><path fill="#fff" d="M43.6 20H24v8h11.3C33.5 33.6 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.7-.1-4z"/></svg>
+            Write a Google Review
+          </button>
+        </a>
+        <a href="https://www.zomato.com/mumbai/the-stone-age-cafe-nerul-navi-mumbai/reviews" target="_blank" style="text-decoration:none">
+          <button style="background:#E23744;color:#fff;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:10px 18px;border:none;cursor:pointer">Review on Zomato ↗</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VISIT -->
+<div class="vsec" id="visit">
+  <div style="max-width:960px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:40px">
+      <p class="lbl" style="color:#5a5248;margin-bottom:12px">Find the cave</p>
+      <h2 class="pf" style="font-size:clamp(26px,4vw,46px);font-weight:700;color:#faf9f7">Come As You Are</h2>
+    </div>
+    <div class="vgrid">
+      <div class="vt"><p class="vl">Address</p><p class="vv pf">Sector 3, Nerul<br>Navi Mumbai</p><p class="vs2">Opp. Maharashtra Bank<br>Shop 5, Ashirwad Apts</p></div>
+      <div class="vt"><p class="vl">Hours</p><p class="vv pf">11 AM – 11 PM</p><p class="vs2">Open every day<br>Mon – Sun</p></div>
+      <div class="vt"><p class="vl">Contact</p><p class="vv pf">+91 99999 00000</p><p class="vs2">Walk-ins welcome<br>WhatsApp booking available</p></div>
+      <div class="vt"><p class="vl">Ratings</p><p class="vv pf">4.5 ★</p><p class="vs2">490+ verified reviews<br>Zomato & Google</p></div>
+    </div>
+    <div class="vcta">
+      <p class="vq">"The kind of place you find once and never forget."</p>
+      <div class="vbtns">
+        <a href="https://maps.google.com/?q=The+Stone+Age+Cafe+Sector+3+Nerul+Navi+Mumbai" target="_blank" style="text-decoration:none"><button class="ba">Get Directions ↗</button></a>
+        <a href="tel:+919999900000" style="text-decoration:none"><button class="bdark">Call Us</button></a>
+        <button class="bw" onclick="go('booking')">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div><p class="fn pf">The Stone Age Cafe</p><p class="fs2">Sector 3, Nerul · 100% Pure Veg · 4.5 ★ · 490+ Reviews</p></div>
+  <div class="ftl">
+    <button class="nb" onclick="go('gallery')" style="color:#5a5248">gallery</button>
+    <button class="nb" onclick="go('menu')" style="color:#5a5248">menu</button>
+    <button class="nb" onclick="go('booking')" style="color:#5a5248">book</button>
+    <button class="nb" onclick="go('reviews')" style="color:#5a5248">reviews</button>
+    <button class="nb" onclick="go('visit')" style="color:#5a5248">visit</button>
+  </div>
+  <p class="fcp">© 2026 The Stone Age Cafe</p>
+</footer>
+
+<div class="mob">
+  <div><p class="mbn pf">The Stone Age</p><p class="mbs">Open Now · 4.5 ★</p></div>
+  <div class="mbw">
+    <button class="ba" onclick="go('menu')" style="padding:8px 13px;font-size:9px">Menu</button>
+    <button class="bw" onclick="go('booking')" style="padding:8px 11px;font-size:9px;gap:5px">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Book
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
